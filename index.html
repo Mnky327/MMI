@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FoodforAll – Mobile Prototype</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="gallery">
+        <!-- Phone: Login -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar">
+              <div class="logo">FoodforAll</div>
+            </header>
+            <div class="screen-content">
+              <h1>Gutes Essen. Weniger Verschwendung.</h1>
+              <form class="card form-card">
+                <label>E‑Mail (Hochschul‑E‑Mail)</label>
+                <input type="email" placeholder="max@uni.de" />
+                <label>Passwort</label>
+                <input type="password" placeholder="Passwort" />
+                <button class="btn primary">Login</button>
+              </form>
+              <p class="muted">Noch kein Konto? <a href="#">Registrieren</a></p>
+            </div>
+            <nav class="bottombar">
+              <button class="nav-item">Start</button>
+              <button class="nav-item">Angebote</button>
+              <button class="nav-item">Favoriten</button>
+              <button class="nav-item">Profil</button>
+            </nav>
+          </section>
+        </div>
+
+        <!-- Phone: Startseite -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar">
+              <button class="icon">☰</button>
+              <div class="title">Hallo Max! 👋</div>
+              <button class="icon">🔔</button>
+            </header>
+            <div class="screen-content">
+              <div class="search"><input placeholder="Suche nach Gerichten…" /></div>
+              <div class="offers">
+                <h3>Verfügbare Angebote</h3>
+                <ul>
+                  <li class="offer">
+                    <div class="thumb"></div>
+                    <div class="offer-info">
+                      <strong>Pasta Bolognese</strong>
+                      <div class="meta">Abholung: 17:30</div>
+                    </div>
+                    <div class="price"><span class="old">3,99 €</span><span class="sale">1,99 € (-50%)</span></div>
+                  </li>
+                  <li class="offer">
+                    <div class="thumb"></div>
+                    <div class="offer-info">
+                      <strong>Curry mit Reis</strong>
+                      <div class="meta">Abholung: 17:45</div>
+                    </div>
+                    <div class="price"><span class="old">5,50 €</span><span class="sale">2,20 € (-60%)</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="bottombar">
+              <button class="nav-item active">Start</button>
+              <button class="nav-item">Angebote</button>
+              <button class="nav-item">Favoriten</button>
+              <button class="nav-item">Profil</button>
+            </nav>
+          </section>
+        </div>
+
+        <!-- Phone: Angebotsdetails -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar small">
+              <button class="icon">←</button>
+              <div class="title">Pasta Bolognese</div>
+              <button class="icon">♡</button>
+            </header>
+            <div class="screen-content">
+              <div class="detail-image"></div>
+              <div class="detail-meta card">
+                <h2>Pasta Bolognese <span class="price-inline">1,99 € <em class="discount">(-50%)</em></span></h2>
+                <ul class="info-list">
+                  <li>Verfügbar: 3 Portionen</li>
+                  <li>Abholung bis: 17:30 Uhr</li>
+                  <li>Mensa: Zentralgebäude</li>
+                </ul>
+                <p class="desc">Hausgemachte Pasta mit leckerer Bolognese‑Sauce.</p>
+                <button class="btn primary">Jetzt reservieren</button>
+              </div>
+            </div>
+            <nav class="bottombar">
+              <button class="nav-item">Start</button>
+              <button class="nav-item">Angebote</button>
+              <button class="nav-item">Favoriten</button>
+              <button class="nav-item">Profil</button>
+            </nav>
+          </section>
+        </div>
+
+        <!-- Phone: Reservierungsbestätigung -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar">
+              <div class="title">Reservierung erfolgreich!</div>
+            </header>
+            <div class="screen-content center">
+              <div class="check">✔</div>
+              <h2>Pasta Bolognese</h2>
+              <p>Abholung bis: 17:30 Uhr</p>
+              <div class="qr card">
+                <div class="qr-placeholder">QR</div>
+                <div class="code">Code: ABCD‑1234</div>
+              </div>
+              <button class="btn secondary">Zurück zur Startseite</button>
+            </div>
+            <nav class="bottombar">
+              <button class="nav-item">Start</button>
+              <button class="nav-item">Angebote</button>
+              <button class="nav-item">Favoriten</button>
+              <button class="nav-item">Profil</button>
+            </nav>
+          </section>
+        </div>
+
+        <!-- Phone: Abholung (Pickup) -->
+        <div class="phone">
+          <section class="screen">
+            <div class="screen-content center">
+              <div class="time">17:30</div>
+              <div class="muted">Dienstag, 10. Juni</div>
+              <div class="pickup-card card">
+                <div class="pickup-notice">FoodforAll<br/>Deine Reservierung ist bereit zur Abholung!</div>
+              </div>
+              <div class="bag-placeholder" style="height:160px;margin:18px auto;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #f0f0f0">Guten Appetit!</div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Phone: Startseite - nach Abholung (neu entdecken) -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar">
+              <div class="title">Hallo Max! 👋</div>
+              <button class="icon">🔔</button>
+            </header>
+            <div class="screen-content">
+              <div class="offers">
+                <h3>Verfügbare Angebote</h3>
+                <ul>
+                  <li class="offer">
+                    <div class="thumb"></div>
+                    <div class="offer-info">
+                      <strong>Curry mit Reis</strong>
+                      <div class="meta">Abholung: 17:45</div>
+                    </div>
+                    <div class="price"><span class="sale">2,20 € (-60%)</span></div>
+                  </li>
+                  <li class="offer">
+                    <div class="thumb"></div>
+                    <div class="offer-info">
+                      <strong>Salat Bowl</strong>
+                      <div class="meta">Abholung: 18:00</div>
+                    </div>
+                    <div class="price"><span class="sale">1,50 € (-40%)</span></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <nav class="bottombar">
+              <button class="nav-item active">Start</button>
+              <button class="nav-item">Angebote</button>
+              <button class="nav-item">Favoriten</button>
+              <button class="nav-item">Profil</button>
+            </nav>
+          </section>
+        </div>
+
+        <!-- Phone: Push-Benachrichtigung (Lock screen card) -->
+        <div class="phone">
+          <section class="screen">
+            <div class="screen-content center">
+              <div class="lock-time">17:05</div>
+              <div class="muted">Dienstag, 10. Juni</div>
+              <div class="push card" style="margin-top:18px;padding:14px;text-align:left">
+                <strong>FoodforAll</strong>
+                <p>Neues Angebot verfügbar! Pasta Bolognese –50% Jetzt reservieren!</p>
+              </div>
+              <p class="muted" style="margin-top:18px">Zum Öffnen nach oben streichen</p>
+            </div>
+          </section>
+        </div>
+
+        <!-- Phone: Profil Übersicht -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar">
+              <div class="title">Profil</div>
+              <button class="icon">⚙</button>
+            </header>
+            <div class="screen-content">
+              <div class="profile-card card">
+                <div class="avatar">👤</div>
+                <div class="profile-info">
+                  <strong>Max Mustermann</strong>
+                  <div class="muted">max@uni.de</div>
+                </div>
+              </div>
+              <ul class="profile-list card">
+                <li>Meine Statistiken</li>
+                <li>Meine Reservierungen</li>
+                <li>Favoriten</li>
+              </ul>
+            </div>
+            <nav class="bottombar">
+              <button class="nav-item">Start</button>
+              <button class="nav-item">Angebote</button>
+              <button class="nav-item">Favoriten</button>
+              <button class="nav-item active">Profil</button>
+            </nav>
+          </section>
+        </div>
+
+        <!-- Phone: Statistik-Detail -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar small">
+              <button class="icon">←</button>
+              <div class="title">Meine Statistiken</div>
+              <div></div>
+            </header>
+            <div class="screen-content">
+              <div class="stat card">
+                <strong>Gerettete Mahlzeiten</strong>
+                <div class="big">12</div>
+              </div>
+              <div class="stat card">
+                <strong>Eingespartes Essen (kg)</strong>
+                <div class="big">18,4 kg</div>
+              </div>
+              <div class="stat card">
+                <strong>CO₂‑Ersparnis (kg)</strong>
+                <div class="big">9,2 kg</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Phone: Beitragsdetails -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar small">
+              <button class="icon">←</button>
+              <div class="title">Dein Beitrag</div>
+              <div></div>
+            </header>
+            <div class="screen-content">
+              <div class="card">
+                <strong>Gerettete Mahlzeiten</strong>
+                <div class="big">12</div>
+              </div>
+              <div class="card">
+                <strong>Eingespartes Essen</strong>
+                <div class="big">18,4 kg</div>
+              </div>
+              <div class="card">
+                <strong>CO₂‑Ersparnis</strong>
+                <div class="big">9,2 kg</div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Phone: Verlauf -->
+        <div class="phone">
+          <section class="screen">
+            <header class="topbar small">
+              <button class="icon">←</button>
+              <div class="title">Verlauf</div>
+            </header>
+            <div class="screen-content">
+              <ul class="history-list">
+                <li class="card">10.06.2024 — 2 Mahlzeiten — 3,0 kg CO₂</li>
+                <li class="card">07.06.2024 — 1 Mahlzeit — 1,5 kg CO₂</li>
+                <li class="card">04.06.2024 — 2 Mahlzeiten — 2,8 kg CO₂</li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
