@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css" />`r`n    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="viewport-container">
@@ -37,7 +37,7 @@
       <!-- SCREEN 02: Registrierung -->
       <section class="screen" data-screen="02">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Registrierung</div>
           <div class="spacer"></div>
         </header>
@@ -61,26 +61,26 @@
           <button class="btn-primary">Weiter</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 03: Home / Startseite -->
       <section class="screen active" data-screen="03">
         <header class="topbar">
-          <button class="menu-btn">&#9776;</button>
+          <button class="menu-btn" aria-label="Menue"><i class="ti ti-menu-2" aria-hidden="true"></i></button>
           <div class="topbar-title">FoodforAll</div>
-          <button class="notification-btn">&#128276;</button>
+          <button class="notification-btn" aria-label="Benachrichtigungen"><i class="ti ti-bell" aria-hidden="true"></i></button>
         </header>
         <div class="screen-content">
-          <div class="welcome-text">Hallo Max &#128075;</div>
+          <div class="welcome-text">Hallo Max</div>
           <div class="search-box">
             <input type="text" placeholder="Suche nach Gerichten…" />
-            <span class="search-icon">&#128269;</span>
+            <span class="search-icon"><i class="ti ti-search" aria-hidden="true"></i></span>
           </div>
 
           <div class="section-header">Beliebte Angebote heute</div>
@@ -109,7 +109,7 @@
 
           <div class="campus-entry-card compact-campus-card">
             <div class="campus-entry-copy">
-              <p class="campus-kicker">Hochschulansicht</p>
+              <p class="campus-kicker"><i class="ti ti-map-pin" aria-hidden="true"></i><span>Hochschulansicht</span></p>
               <h3>Hochschulen und Unis entdecken</h3>
               <p class="campus-meta">Finde passende Angebote direkt nach Hochschule oder Uni.</p>
             </div>
@@ -119,31 +119,31 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn active">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn active"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 04: Angebotsliste -->
       <section class="screen" data-screen="04">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Alle Angebote</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="search-box">
             <input type="text" placeholder="Suche…" />
-            <span class="search-icon">&#128269;</span>
+            <span class="search-icon"><i class="ti ti-search" aria-hidden="true"></i></span>
           </div>
 
           <div class="filter-tags">
             <span class="tag">Vegetarisch</span>
             <span class="tag">Vegan</span>
-            <button class="tag tag-action">&#9881; Weitere Filter</button>
+            <button class="tag tag-action"><i class="ti ti-adjustments-horizontal" aria-hidden="true"></i><span>Weitere Filter</span></button>
           </div>
 
           <div class="offer-item">
@@ -207,31 +207,31 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 05: Suche aktiv -->
       <section class="screen" data-screen="05">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Alle Angebote</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="search-box active">
             <input type="text" placeholder="pasta" />
-            <span class="search-icon">&#10005;</span>
+            <span class="search-icon"><i class="ti ti-x" aria-hidden="true"></i></span>
           </div>
 
           <div class="filter-tags">
             <span class="tag tag-selected">Suche: pasta</span>
             <span class="tag">Vegetarisch</span>
-            <button class="tag tag-action">&#9881; Weitere Filter</button>
+            <button class="tag tag-action"><i class="ti ti-adjustments-horizontal" aria-hidden="true"></i><span>Weitere Filter</span></button>
           </div>
 
           <div class="offer-item">
@@ -269,20 +269,20 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 06: Filter offen -->
       <section class="screen" data-screen="06">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Filter</div>
-          <button class="save-btn">OK</button>
+          <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="filter-group">
@@ -329,22 +329,24 @@
               <input type="checkbox" /> 18:00 - 18:30
             </label>
           </div>
+
+          <button class="btn-primary">Filter übernehmen</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 07: Angebotsdetail -->
       <section class="screen" data-screen="07">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Pasta Bolognese</div>
-          <button class="like-btn">♡</button>
+          <button class="like-btn" aria-label="Favorit"><i class="ti ti-heart" aria-hidden="true"></i></button>
         </header>
         <div class="screen-content">
           <div class="detail-image"><img src="assets/images/pasta-bolognese.png" alt="Pasta Bolognese" loading="lazy" /></div>
@@ -379,20 +381,20 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 08: Favorit hinzufügen -->
       <section class="screen" data-screen="08">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Pasta Bolognese</div>
-          <button class="like-btn filled">♥</button>
+          <button class="like-btn filled" aria-label="Favorit aktiv"><i class="ti ti-heart-filled" aria-hidden="true"></i></button>
         </header>
         <div class="screen-content">
           <div class="detail-image"><img src="assets/images/pasta-bolognese.png" alt="Pasta Bolognese" loading="lazy" /></div>
@@ -400,25 +402,25 @@
           <div class="detail-section">
             <h2>Pasta Bolognese</h2>
             <div class="detail-price">1,99 EUR</div>
-            <p class="success-text">✓ Zu Favoriten hinzugefügt</p>
+            <p class="success-text"><i class="ti ti-check" aria-hidden="true"></i> Zu Favoriten hinzugefügt</p>
 
             <button class="btn-primary btn-large">Für 1,99 EUR reservieren</button>
             <button class="btn-secondary">Zu Favoriten</button>
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 09: Reservierung bestätigen -->
       <section class="screen" data-screen="09">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Reservierung</div>
           <div class="spacer"></div>
         </header>
@@ -457,11 +459,11 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn active">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn active"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
@@ -473,7 +475,7 @@
           <div class="spacer"></div>
         </header>
         <div class="screen-content center">
-          <div class="success-icon">✓</div>
+          <div class="success-icon"><i class="ti ti-check" aria-hidden="true"></i></div>
 
           <h2>Reservierung bestätigt</h2>
           <p class="subtitle">Dein Essen wartet auf dich!</p>
@@ -498,18 +500,18 @@
           <button class="btn-primary btn-large">Zu meinen Bestellungen</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn active">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn active"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 11: Meine Bestellungen -->
       <section class="screen" data-screen="11">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Meine Bestellungen</div>
           <div class="spacer"></div>
         </header>
@@ -546,18 +548,18 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn active">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn active"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 12: Reservierungsdetail mit Countdown -->
       <section class="screen" data-screen="12">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Bestelldetail</div>
           <div class="spacer"></div>
         </header>
@@ -580,18 +582,18 @@
           <button class="btn-danger">Reservierung stornieren</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn active">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn active"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 13: Storno Bestätigung -->
       <section class="screen" data-screen="13">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Stornierung</div>
           <div class="spacer"></div>
         </header>
@@ -614,23 +616,23 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn active">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn active"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 14: Storno erfolgreich -->
       <section class="screen" data-screen="14">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Storniert</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content center">
-          <div class="info-icon">!</div>
+          <div class="info-icon"><i class="ti ti-info-circle" aria-hidden="true"></i></div>
           <h2>Stornierung erfolgreich</h2>
           <p class="subtitle">Die Reservierung wurde gelöscht.</p>
 
@@ -641,24 +643,24 @@
           <button class="btn-primary btn-large">Neue Angebote ansehen</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn active">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn active"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 15: Favoriten leer -->
       <section class="screen" data-screen="15">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Favoriten</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content center">
           <div class="empty-state">
-            <div class="empty-icon">♡</div>
+            <div class="empty-icon"><i class="ti ti-heart" aria-hidden="true"></i></div>
             <h2>Noch keine Favoriten</h2>
             <p class="subtitle">Speichere Angebote, die dir gefallen!</p>
           </div>
@@ -666,18 +668,18 @@
           <button class="btn-primary btn-large">Angebote entdecken</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn active">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn active"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 16: Favoriten gefüllt -->
       <section class="screen" data-screen="16">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Favoriten</div>
           <span class="count">2</span>
         </header>
@@ -689,7 +691,7 @@
               <p class="offer-meta">HRW M&uuml;lheim</p>
               <p class="offer-submeta">Abholung 17:30 • 3 verf&uuml;gbar • Mit Fleisch</p>
             </div>
-            <button class="like-btn filled">♥</button>
+            <button class="like-btn filled" aria-label="Favorit aktiv"><i class="ti ti-heart-filled" aria-hidden="true"></i></button>
           </div>
 
           <div class="offer-item">
@@ -699,24 +701,24 @@
               <p class="offer-meta">Ruhr-Universit&auml;t Bochum</p>
               <p class="offer-submeta">Abholung 18:00 • 1 verf&uuml;gbar • Vegetarisch</p>
             </div>
-            <button class="like-btn filled">♥</button>
+            <button class="like-btn filled" aria-label="Favorit aktiv"><i class="ti ti-heart-filled" aria-hidden="true"></i></button>
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn active">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn active"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 17: Profil -->
       <section class="screen" data-screen="17">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Mein Profil</div>
-          <button class="settings-btn">⚙</button>
+          <button class="settings-btn" aria-label="Einstellungen"><i class="ti ti-settings" aria-hidden="true"></i></button>
         </header>
         <div class="screen-content">
           <div class="profile-header">
@@ -740,17 +742,17 @@
 
           <div class="menu-list">
             <button class="menu-item">
-              <span class="menu-icon">📋</span>
+              <span class="menu-icon"><i class="ti ti-history" aria-hidden="true"></i></span>
               <span class="menu-text">Bestellhistorie</span>
               <span class="arrow">→</span>
             </button>
             <button class="menu-item">
-              <span class="menu-icon">💬</span>
+              <span class="menu-icon"><i class="ti ti-message-circle" aria-hidden="true"></i></span>
               <span class="menu-text">Bewertungen</span>
               <span class="arrow">→</span>
             </button>
             <button class="menu-item">
-              <span class="menu-icon">&#128276;</span>
+              <span class="menu-icon"><i class="ti ti-bell" aria-hidden="true"></i></span>
               <span class="menu-text">Benachrichtigungen</span>
               <span class="arrow">→</span>
             </button>
@@ -760,25 +762,25 @@
               <span class="arrow">→</span>
             </button>
             <button class="menu-item logout">
-              <span class="menu-icon">🚪</span>
+              <span class="menu-icon"><i class="ti ti-logout" aria-hidden="true"></i></span>
               <span class="menu-text">Abmelden</span>
               <span class="arrow">→</span>
             </button>
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn active">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn active"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 18: Einstellungen -->
       <section class="screen" data-screen="18">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Einstellungen</div>
           <div class="spacer"></div>
         </header>
@@ -823,18 +825,18 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn active">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn active"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 19: Bestellhistorie -->
       <section class="screen" data-screen="19">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Bestellhistorie</div>
           <div class="spacer"></div>
         </header>
@@ -884,20 +886,20 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn active">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn active"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 20: Bewertung Anbieter -->
       <section class="screen" data-screen="20">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Bewertung</div>
-          <button class="save-btn">Senden</button>
+          <div class="spacer"></div>
         </header>
         <div class="screen-content center">
           <div class="rating-card">
@@ -918,24 +920,24 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn active">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn active"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 21: Benachrichtigungen -->
       <section class="screen" data-screen="21">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Benachrichtigungen</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="notification-item">
-            <div class="notif-icon">🍝</div>
+            <div class="notif-icon"><i class="ti ti-bell-ringing" aria-hidden="true"></i></div>
             <div class="notif-content">
               <h3>Pasta Bolognese verfügbar</h3>
               <p>Jetzt für nur 1,99 EUR reservieren!</p>
@@ -944,7 +946,7 @@
           </div>
 
           <div class="notification-item">
-            <div class="notif-icon">⏰</div>
+            <div class="notif-icon"><i class="ti ti-clock" aria-hidden="true"></i></div>
             <div class="notif-content">
               <h3>Abholzeit nähert sich</h3>
               <p>Deine Bestellung ist in 15 Minuten bereit!</p>
@@ -953,7 +955,7 @@
           </div>
 
           <div class="notification-item">
-            <div class="notif-icon">♡</div>
+            <div class="notif-icon"><i class="ti ti-heart" aria-hidden="true"></i></div>
             <div class="notif-content">
               <h3>Dein Favorit ist verfügbar</h3>
               <p>Curry mit Reis ist wieder da!</p>
@@ -962,20 +964,20 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn active">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn active"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 22: Hochschulansicht -->
       <section class="screen" data-screen="22">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Hochschulansicht</div>
-          <button class="list-btn">≡</button>
+          <button class="list-btn" aria-label="Listenansicht"><i class="ti ti-list" aria-hidden="true"></i></button>
         </header>
         <div class="screen-content">
           <div class="campus-list map-campus-list">
@@ -1008,11 +1010,11 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
@@ -1024,7 +1026,7 @@
           <div class="spacer"></div>
         </header>
         <div class="screen-content center">
-          <div class="success-icon">✓</div>
+          <div class="success-icon"><i class="ti ti-check" aria-hidden="true"></i></div>
           <h2>Guten Appetit!</h2>
           <p class="subtitle">Deine Bestellung wurde abgeholt.</p>
 
@@ -1040,23 +1042,23 @@
           <button class="btn-primary btn-large">Anbieter bewerten</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn active">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn active"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 24: Keine Ergebnisse -->
       <section class="screen" data-screen="24">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Keine Ergebnisse</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content center">
-          <div class="error-icon">&#10005;</div>
+          <div class="error-icon"><i class="ti ti-x" aria-hidden="true"></i></div>
           <h2>Keine Angebote gefunden</h2>
           <p class="subtitle">Versuche einen anderen Campus oder Zeitraum</p>
 
@@ -1067,41 +1069,41 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 25: Netzwerkfehler -->
       <section class="screen" data-screen="25">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Fehler</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content center">
-          <div class="error-icon large">⚠</div>
+          <div class="error-icon large"><i class="ti ti-alert-triangle" aria-hidden="true"></i></div>
           <h2>Verbindungsfehler</h2>
           <p class="error-text">Überprüfe deine Internetverbindung und versuche erneut.</p>
 
           <button class="btn-primary btn-large">Erneut versuchen</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn active">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn active"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 26: Loading State -->
       <section class="screen" data-screen="26">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Wird geladen…</div>
           <div class="spacer"></div>
         </header>
@@ -1111,18 +1113,18 @@
           <p class="loading-text">Bitte warten</p>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 27: Sortierung Variante -->
       <section class="screen" data-screen="27">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Sortierung</div>
           <div class="spacer"></div>
         </header>
@@ -1152,20 +1154,20 @@
           <button class="btn-primary btn-large">Anwenden</button>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 28: Detail Vegetarisch -->
       <section class="screen" data-screen="28">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Gemüselasagne</div>
-          <button class="like-btn">♡</button>
+          <button class="like-btn" aria-label="Favorit"><i class="ti ti-heart" aria-hidden="true"></i></button>
         </header>
         <div class="screen-content">
           <div class="detail-image"><img src="assets/images/gemueselasagne.png" alt="Gemüselasagne" loading="lazy" /></div>
@@ -1198,31 +1200,31 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 29: Filter aktiv mit Ergebnis -->
       <section class="screen" data-screen="29">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Alle Angebote</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="search-box">
             <input type="text" placeholder="Suche…" />
-            <span class="search-icon">&#128269;</span>
+            <span class="search-icon"><i class="ti ti-search" aria-hidden="true"></i></span>
           </div>
 
           <div class="filter-tags">
             <span class="tag tag-selected">Vegetarisch</span>
             <span class="tag tag-selected">HRW M&uuml;lheim</span>
-            <button class="tag tag-action">&#9881; Weitere Filter</button>
+            <button class="tag tag-action"><i class="ti ti-adjustments-horizontal" aria-hidden="true"></i><span>Weitere Filter</span></button>
           </div>
 
           <div class="offer-item">
@@ -1250,18 +1252,18 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 30: Hilfe / Barrierefreiheit -->
       <section class="screen" data-screen="30">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Hilfe & Support</div>
           <div class="spacer"></div>
         </header>
@@ -1288,30 +1290,30 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn active">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn active"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 31: HRW Mülheim Angebote -->
       <section class="screen" data-screen="31">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Alle Angebote</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="search-box">
             <input type="text" placeholder="Suche…" />
-            <span class="search-icon">&#128269;</span>
+            <span class="search-icon"><i class="ti ti-search" aria-hidden="true"></i></span>
           </div>
 
           <div class="filter-tags">
             <span class="tag tag-selected">HRW M&uuml;lheim</span>
-            <button class="tag tag-action">&#9881; Weitere Filter</button>
+            <button class="tag tag-action"><i class="ti ti-adjustments-horizontal" aria-hidden="true"></i><span>Weitere Filter</span></button>
           </div>
 
           <div class="offer-item">
@@ -1349,30 +1351,30 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 32: Ruhr-Universität Bochum Angebote -->
       <section class="screen" data-screen="32">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Alle Angebote</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="search-box">
             <input type="text" placeholder="Suche…" />
-            <span class="search-icon">&#128269;</span>
+            <span class="search-icon"><i class="ti ti-search" aria-hidden="true"></i></span>
           </div>
 
           <div class="filter-tags">
             <span class="tag tag-selected">Ruhr-Universit&auml;t Bochum</span>
-            <button class="tag tag-action">&#9881; Weitere Filter</button>
+            <button class="tag tag-action"><i class="ti ti-adjustments-horizontal" aria-hidden="true"></i><span>Weitere Filter</span></button>
           </div>
 
           <div class="offer-item">
@@ -1400,30 +1402,30 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 33: Universität Duisburg-Essen Angebote -->
       <section class="screen" data-screen="33">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Alle Angebote</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="search-box">
             <input type="text" placeholder="Suche…" />
-            <span class="search-icon">&#128269;</span>
+            <span class="search-icon"><i class="ti ti-search" aria-hidden="true"></i></span>
           </div>
 
           <div class="filter-tags">
             <span class="tag tag-selected">Universit&auml;t Duisburg-Essen</span>
-            <button class="tag tag-action">&#9881; Weitere Filter</button>
+            <button class="tag tag-action"><i class="ti ti-adjustments-horizontal" aria-hidden="true"></i><span>Weitere Filter</span></button>
           </div>
 
           <div class="offer-item">
@@ -1441,31 +1443,31 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
 
       <!-- SCREEN 34: Alle Angebote -> Vegetarisch aktiviert -->
       <section class="screen" data-screen="34">
         <header class="topbar">
-          <button class="back-btn">&#8592;</button>
+          <button class="back-btn" aria-label="Zurueck"><i class="ti ti-arrow-left" aria-hidden="true"></i></button>
           <div class="topbar-title">Alle Angebote</div>
           <div class="spacer"></div>
         </header>
         <div class="screen-content">
           <div class="search-box">
             <input type="text" placeholder="Suche…" />
-            <span class="search-icon">&#128269;</span>
+            <span class="search-icon"><i class="ti ti-search" aria-hidden="true"></i></span>
           </div>
 
           <div class="filter-tags">
             <span class="tag tag-selected">Vegetarisch</span>
             <span class="tag">Vegan</span>
-            <button class="tag tag-action">&#9881; Weitere Filter</button>
+            <button class="tag tag-action"><i class="ti ti-adjustments-horizontal" aria-hidden="true"></i><span>Weitere Filter</span></button>
           </div>
 
           <div class="offer-item">
@@ -1503,16 +1505,17 @@
           </div>
         </div>
         <nav class="bottombar">
-          <button class="nav-btn">&#127968; Start</button>
-          <button class="nav-btn active">&#128269; Suche</button>
-          <button class="nav-btn">&#128230; Bestellungen</button>
-          <button class="nav-btn">&#10084;&#65039; Favoriten</button>
-          <button class="nav-btn">&#128100; Profil</button>
+          <button class="nav-btn"><i class="ti ti-home" aria-hidden="true"></i><span>Start</span></button>
+          <button class="nav-btn active"><i class="ti ti-search" aria-hidden="true"></i><span>Suche</span></button>
+          <button class="nav-btn"><i class="ti ti-package" aria-hidden="true"></i><span>Bestellungen</span></button>
+          <button class="nav-btn"><i class="ti ti-heart" aria-hidden="true"></i><span>Favoriten</span></button>
+          <button class="nav-btn"><i class="ti ti-user" aria-hidden="true"></i><span>Profil</span></button>
         </nav>
       </section>
     </div>
   </body>
 </html>
+
 
 
 

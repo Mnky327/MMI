@@ -147,7 +147,7 @@ body {
   background: transparent;
   border: none;
   font-size: 18px;
-  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  font-family: inherit;
   cursor: pointer;
   padding: var(--spacing-sm);
   display: flex;
@@ -448,6 +448,11 @@ p {
   cursor: pointer;
 }
 
+.search-icon .ti {
+  font-size: 16px;
+  color: white;
+}
+
 .filter-tags {
   display: flex;
   gap: var(--spacing-sm);
@@ -472,7 +477,8 @@ p {
   background: var(--primary-light);
   border-color: #b6d7bf;
   color: var(--primary-dark);
-  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  font-family: inherit;
+  gap: 6px;
 }
 
 .tag-action:active {
@@ -1141,6 +1147,10 @@ p {
   margin-right: var(--spacing-md);
 }
 
+.menu-icon .ti {
+  font-size: 18px;
+}
+
 .menu-text {
   flex: 1;
 }
@@ -1279,6 +1289,11 @@ p {
 .notif-icon {
   font-size: 28px;
   flex-shrink: 0;
+}
+
+.notif-icon .ti {
+  font-size: 24px;
+  color: var(--primary-dark);
 }
 
 .notif-content h3 {
@@ -1525,7 +1540,7 @@ p {
   background: transparent;
   cursor: pointer;
   font-size: 12px;
-  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
+  font-family: inherit;
   font-weight: 600;
   color: var(--text-light);
   transition: var(--transition);
@@ -1535,6 +1550,25 @@ p {
   justify-content: center;
   gap: 3px;
   white-space: nowrap;
+}
+
+.nav-btn .ti {
+  font-size: 19px;
+  line-height: 1;
+}
+
+.nav-btn span {
+  line-height: 1.1;
+}
+
+.back-btn .ti,
+.menu-btn .ti,
+.notification-btn .ti,
+.like-btn .ti,
+.settings-btn .ti,
+.list-btn .ti {
+  font-size: 20px;
+  line-height: 1;
 }
 
 /* Keep critical reservation/detail screens within fixed 402x874 without scrolling */
@@ -1964,8 +1998,14 @@ p {
   color: var(--accent-dark);
 }
 
-.campus-kicker::before {
-  content: "📍 ";
+.campus-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.campus-kicker .ti {
+  font-size: 14px;
 }
 
 /* Decorative, non-intrusive icon watermarks on image placeholders (absolute, no reflow) */
@@ -2000,6 +2040,7 @@ p {
   border-radius: inherit;
 }
 
+
 .offer-image::before,
 .detail-image::before,
 .dish-image::before,
@@ -2008,23 +2049,11 @@ p {
 .meal-image::before,
 .booking-image::before,
 .history-image::before {
-  content: "🍽";
-  position: absolute;
-  right: 6px;
-  bottom: 4px;
-  font-size: 20px;
-  opacity: 0.18;
-  pointer-events: none;
+  content: none;
 }
 
 .campus-map-placeholder::before {
-  content: "🗺";
-  position: absolute;
-  right: 6px;
-  bottom: 4px;
-  font-size: 20px;
-  opacity: 0.18;
-  pointer-events: none;
+  content: none;
 }
 
 .qr-box {
