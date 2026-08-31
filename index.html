@@ -7,295 +7,1207 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <main class="app">
-      <div class="gallery">
-        <!-- Phone: Login -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar">
-              <div class="logo">FoodforAll</div>
-            </header>
-            <div class="screen-content">
-              <h1>Gutes Essen. Weniger Verschwendung.</h1>
-              <form class="card form-card">
-                <label>E‑Mail (Hochschul‑E‑Mail)</label>
-                <input type="email" placeholder="max@uni.de" />
-                <label>Passwort</label>
-                <input type="password" placeholder="Passwort" />
-                <button class="btn primary">Login</button>
-              </form>
-              <p class="muted">Noch kein Konto? <a href="#">Registrieren</a></p>
-            </div>
-            <nav class="bottombar">
-              <button class="nav-item">Start</button>
-              <button class="nav-item">Angebote</button>
-              <button class="nav-item">Favoriten</button>
-              <button class="nav-item">Profil</button>
-            </nav>
-          </section>
+    <div class="viewport-container">
+      <!-- SCREEN 01: Login -->
+      <section class="screen" data-screen="01">
+        <header class="topbar" data-style="logo">
+          <div class="logo">FoodforAll</div>
+        </header>
+        <div class="screen-content">
+          <h1>Gutes Essen.<br>Weniger Verschwendung.</h1>
+          <div class="form-group">
+            <label>Hochschul-E-Mail</label>
+            <input type="email" placeholder="max@uni.de" />
+          </div>
+          <div class="form-group">
+            <label>Passwort</label>
+            <input type="password" placeholder="••••••" />
+          </div>
+          <button class="btn-primary">Anmelden</button>
+          <button class="btn-secondary">Neues Konto</button>
         </div>
+      </section>
 
-        <!-- Phone: Startseite -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar">
-              <button class="icon">☰</button>
-              <div class="title">Hallo Max! 👋</div>
-              <button class="icon">🔔</button>
-            </header>
-            <div class="screen-content">
-              <div class="search"><input placeholder="Suche nach Gerichten…" /></div>
-              <div class="offers">
-                <h3>Verfügbare Angebote</h3>
-                <ul>
-                  <li class="offer">
-                    <div class="thumb"></div>
-                    <div class="offer-info">
-                      <strong>Pasta Bolognese</strong>
-                      <div class="meta">Abholung: 17:30</div>
-                    </div>
-                    <div class="price"><span class="old">3,99 €</span><span class="sale">1,99 € (-50%)</span></div>
-                  </li>
-                  <li class="offer">
-                    <div class="thumb"></div>
-                    <div class="offer-info">
-                      <strong>Curry mit Reis</strong>
-                      <div class="meta">Abholung: 17:45</div>
-                    </div>
-                    <div class="price"><span class="old">5,50 €</span><span class="sale">2,20 € (-60%)</span></div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-            <nav class="bottombar">
-              <button class="nav-item active">Start</button>
-              <button class="nav-item">Angebote</button>
-              <button class="nav-item">Favoriten</button>
-              <button class="nav-item">Profil</button>
-            </nav>
-          </section>
+      <!-- SCREEN 02: Registrierung -->
+      <section class="screen" data-screen="02">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Registrierung</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="form-group">
+            <label>Vollständiger Name</label>
+            <input type="text" placeholder="Max Mustermann" />
+          </div>
+          <div class="form-group">
+            <label>Hochschul-E-Mail</label>
+            <input type="email" placeholder="max@uni.de" />
+          </div>
+          <div class="form-group">
+            <label>Passwort</label>
+            <input type="password" placeholder="••••••" />
+          </div>
+          <div class="form-group">
+            <label>Passwort wiederholen</label>
+            <input type="password" placeholder="••••••" />
+          </div>
+          <button class="btn-primary">Weiter</button>
         </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
 
-        <!-- Phone: Angebotsdetails -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar small">
-              <button class="icon">←</button>
-              <div class="title">Pasta Bolognese</div>
-              <button class="icon">♡</button>
-            </header>
-            <div class="screen-content">
-              <div class="detail-image"></div>
-              <div class="detail-meta card">
-                <h2>Pasta Bolognese <span class="price-inline">1,99 € <em class="discount">(-50%)</em></span></h2>
-                <ul class="info-list">
-                  <li>Verfügbar: 3 Portionen</li>
-                  <li>Abholung bis: 17:30 Uhr</li>
-                  <li>Mensa: Zentralgebäude</li>
-                </ul>
-                <p class="desc">Hausgemachte Pasta mit leckerer Bolognese‑Sauce.</p>
-                <button class="btn primary">Jetzt reservieren</button>
-              </div>
-            </div>
-            <nav class="bottombar">
-              <button class="nav-item">Start</button>
-              <button class="nav-item">Angebote</button>
-              <button class="nav-item">Favoriten</button>
-              <button class="nav-item">Profil</button>
-            </nav>
-          </section>
-        </div>
+      <!-- SCREEN 03: Home / Startseite -->
+      <section class="screen active" data-screen="03">
+        <header class="topbar">
+          <button class="menu-btn">☰</button>
+          <div class="topbar-title">FoodforAll</div>
+          <button class="notification-btn">🔔</button>
+        </header>
+        <div class="screen-content">
+          <div class="welcome-text">Hallo Max 👋</div>
+          <div class="search-box">
+            <input type="text" placeholder="Suche nach Gerichten…" />
+            <span class="search-icon">🔍</span>
+          </div>
 
-        <!-- Phone: Reservierungsbestätigung -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar">
-              <div class="title">Reservierung erfolgreich!</div>
-            </header>
-            <div class="screen-content center">
-              <div class="check">✔</div>
-              <h2>Pasta Bolognese</h2>
-              <p>Abholung bis: 17:30 Uhr</p>
-              <div class="qr card">
-                <div class="qr-placeholder">QR</div>
-                <div class="code">Code: ABCD‑1234</div>
-              </div>
-              <button class="btn secondary">Zurück zur Startseite</button>
-            </div>
-            <nav class="bottombar">
-              <button class="nav-item">Start</button>
-              <button class="nav-item">Angebote</button>
-              <button class="nav-item">Favoriten</button>
-              <button class="nav-item">Profil</button>
-            </nav>
-          </section>
-        </div>
+          <div class="section-header">Verfügbare Angebote heute</div>
 
-        <!-- Phone: Abholung (Pickup) -->
-        <div class="phone">
-          <section class="screen">
-            <div class="screen-content center">
-              <div class="time">17:30</div>
-              <div class="muted">Dienstag, 10. Juni</div>
-              <div class="pickup-card card">
-                <div class="pickup-notice">FoodforAll<br/>Deine Reservierung ist bereit zur Abholung!</div>
-              </div>
-              <div class="bag-placeholder" style="height:160px;margin:18px auto;background:#fff;border-radius:12px;display:flex;align-items:center;justify-content:center;border:1px solid #f0f0f0">Guten Appetit!</div>
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Pasta Bolognese</h3>
+              <p class="offer-meta">Mensa Zentrum • Abholung 17:30</p>
             </div>
-          </section>
-        </div>
+            <div class="offer-price">1,99 EUR</div>
+          </div>
 
-        <!-- Phone: Startseite - nach Abholung (neu entdecken) -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar">
-              <div class="title">Hallo Max! 👋</div>
-              <button class="icon">🔔</button>
-            </header>
-            <div class="screen-content">
-              <div class="offers">
-                <h3>Verfügbare Angebote</h3>
-                <ul>
-                  <li class="offer">
-                    <div class="thumb"></div>
-                    <div class="offer-info">
-                      <strong>Curry mit Reis</strong>
-                      <div class="meta">Abholung: 17:45</div>
-                    </div>
-                    <div class="price"><span class="sale">2,20 € (-60%)</span></div>
-                  </li>
-                  <li class="offer">
-                    <div class="thumb"></div>
-                    <div class="offer-info">
-                      <strong>Salat Bowl</strong>
-                      <div class="meta">Abholung: 18:00</div>
-                    </div>
-                    <div class="price"><span class="sale">1,50 € (-40%)</span></div>
-                  </li>
-                </ul>
-              </div>
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Curry mit Reis</h3>
+              <p class="offer-meta">Mensa Nord • Abholung 17:45</p>
             </div>
-            <nav class="bottombar">
-              <button class="nav-item active">Start</button>
-              <button class="nav-item">Angebote</button>
-              <button class="nav-item">Favoriten</button>
-              <button class="nav-item">Profil</button>
-            </nav>
-          </section>
-        </div>
+            <div class="offer-price">2,20 EUR</div>
+          </div>
 
-        <!-- Phone: Push-Benachrichtigung (Lock screen card) -->
-        <div class="phone">
-          <section class="screen">
-            <div class="screen-content center">
-              <div class="lock-time">17:05</div>
-              <div class="muted">Dienstag, 10. Juni</div>
-              <div class="push card" style="margin-top:18px;padding:14px;text-align:left">
-                <strong>FoodforAll</strong>
-                <p>Neues Angebot verfügbar! Pasta Bolognese –50% Jetzt reservieren!</p>
-              </div>
-              <p class="muted" style="margin-top:18px">Zum Öffnen nach oben streichen</p>
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Salat Bowl</h3>
+              <p class="offer-meta">Mensa Süd • Abholung 18:00</p>
             </div>
-          </section>
+            <div class="offer-price">1,50 EUR</div>
+          </div>
         </div>
+        <nav class="bottombar">
+          <button class="nav-btn active">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
 
-        <!-- Phone: Profil Übersicht -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar">
-              <div class="title">Profil</div>
-              <button class="icon">⚙</button>
-            </header>
-            <div class="screen-content">
-              <div class="profile-card card">
-                <div class="avatar">👤</div>
-                <div class="profile-info">
-                  <strong>Max Mustermann</strong>
-                  <div class="muted">max@uni.de</div>
-                </div>
-              </div>
-              <ul class="profile-list card">
-                <li>Meine Statistiken</li>
-                <li>Meine Reservierungen</li>
-                <li>Favoriten</li>
-              </ul>
-            </div>
-            <nav class="bottombar">
-              <button class="nav-item">Start</button>
-              <button class="nav-item">Angebote</button>
-              <button class="nav-item">Favoriten</button>
-              <button class="nav-item active">Profil</button>
-            </nav>
-          </section>
-        </div>
+      <!-- SCREEN 04: Angebotsliste -->
+      <section class="screen" data-screen="04">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Alle Angebote</div>
+          <button class="filter-btn">🔽</button>
+        </header>
+        <div class="screen-content">
+          <div class="search-box">
+            <input type="text" placeholder="Suche…" />
+            <span class="search-icon">🔍</span>
+          </div>
 
-        <!-- Phone: Statistik-Detail -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar small">
-              <button class="icon">←</button>
-              <div class="title">Meine Statistiken</div>
-              <div></div>
-            </header>
-            <div class="screen-content">
-              <div class="stat card">
-                <strong>Gerettete Mahlzeiten</strong>
-                <div class="big">12</div>
-              </div>
-              <div class="stat card">
-                <strong>Eingespartes Essen (kg)</strong>
-                <div class="big">18,4 kg</div>
-              </div>
-              <div class="stat card">
-                <strong>CO₂‑Ersparnis (kg)</strong>
-                <div class="big">9,2 kg</div>
-              </div>
-            </div>
-          </section>
-        </div>
+          <div class="filter-tags">
+            <span class="tag">Vegetarisch</span>
+            <span class="tag">Vegan</span>
+            <span class="tag">Campus</span>
+          </div>
 
-        <!-- Phone: Beitragsdetails -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar small">
-              <button class="icon">←</button>
-              <div class="title">Dein Beitrag</div>
-              <div></div>
-            </header>
-            <div class="screen-content">
-              <div class="card">
-                <strong>Gerettete Mahlzeiten</strong>
-                <div class="big">12</div>
-              </div>
-              <div class="card">
-                <strong>Eingespartes Essen</strong>
-                <div class="big">18,4 kg</div>
-              </div>
-              <div class="card">
-                <strong>CO₂‑Ersparnis</strong>
-                <div class="big">9,2 kg</div>
-              </div>
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Pasta Bolognese</h3>
+              <p class="offer-meta">17:30 • 3 verfügbar</p>
             </div>
-          </section>
-        </div>
+            <div class="offer-price">1,99 EUR</div>
+          </div>
 
-        <!-- Phone: Verlauf -->
-        <div class="phone">
-          <section class="screen">
-            <header class="topbar small">
-              <button class="icon">←</button>
-              <div class="title">Verlauf</div>
-            </header>
-            <div class="screen-content">
-              <ul class="history-list">
-                <li class="card">10.06.2024 — 2 Mahlzeiten — 3,0 kg CO₂</li>
-                <li class="card">07.06.2024 — 1 Mahlzeit — 1,5 kg CO₂</li>
-                <li class="card">04.06.2024 — 2 Mahlzeiten — 2,8 kg CO₂</li>
-              </ul>
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Curry mit Reis</h3>
+              <p class="offer-meta">17:45 • 2 verfügbar</p>
             </div>
-          </section>
+            <div class="offer-price">2,20 EUR</div>
+          </div>
+
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Gemüselasagne</h3>
+              <p class="offer-meta">18:00 • 1 verfügbar</p>
+            </div>
+            <div class="offer-price">2,10 EUR</div>
+          </div>
+
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Salat Bowl</h3>
+              <p class="offer-meta">18:00 • 4 verfügbar</p>
+            </div>
+            <div class="offer-price">1,50 EUR</div>
+          </div>
         </div>
-      </div>
-    </main>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 05: Suche aktiv -->
+      <section class="screen" data-screen="05">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Suche</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="search-box active">
+            <input type="text" placeholder="pasta" />
+            <span class="search-icon">✕</span>
+          </div>
+
+          <div class="results-info">3 Ergebnisse für "pasta"</div>
+
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Pasta Bolognese</h3>
+              <p class="offer-meta">Mensa Zentrum • 17:30</p>
+            </div>
+            <div class="offer-price">1,99 EUR</div>
+          </div>
+
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Pasta Arrabiata</h3>
+              <p class="offer-meta">Mensa Nord • 18:00</p>
+            </div>
+            <div class="offer-price">1,79 EUR</div>
+          </div>
+
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Pasta Carbonara</h3>
+              <p class="offer-meta">Mensa Süd • 17:45</p>
+            </div>
+            <div class="offer-price">2,50 EUR</div>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 06: Filter offen -->
+      <section class="screen" data-screen="06">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Filter</div>
+          <button class="save-btn">OK</button>
+        </header>
+        <div class="screen-content">
+          <div class="filter-group">
+            <h3 class="filter-title">Campus</h3>
+            <label class="checkbox-option">
+              <input type="checkbox" /> Zentrum
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" /> Nord
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" /> Süd
+            </label>
+          </div>
+
+          <div class="filter-group">
+            <h3 class="filter-title">Ernährung</h3>
+            <label class="checkbox-option">
+              <input type="checkbox" /> Vegetarisch
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" /> Vegan
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" /> Mit Fleisch
+            </label>
+          </div>
+
+          <div class="filter-group">
+            <h3 class="filter-title">Preis</h3>
+            <div class="price-display">0,99 EUR - 3,99 EUR</div>
+            <input type="range" min="0" max="10" value="5" />
+          </div>
+
+          <div class="filter-group">
+            <h3 class="filter-title">Abholzeit</h3>
+            <label class="checkbox-option">
+              <input type="checkbox" /> 17:00 - 17:30
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" /> 17:30 - 18:00
+            </label>
+            <label class="checkbox-option">
+              <input type="checkbox" /> 18:00 - 18:30
+            </label>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 07: Angebotsdetail -->
+      <section class="screen" data-screen="07">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Pasta Bolognese</div>
+          <button class="like-btn">♡</button>
+        </header>
+        <div class="screen-content">
+          <div class="detail-image">Bildplatzhalter für Gericht</div>
+
+          <div class="detail-section">
+            <h2>Pasta Bolognese</h2>
+            <div class="detail-price">1,99 EUR</div>
+            <p class="discount-badge">50% Rabatt</p>
+
+            <div class="info-grid">
+              <div class="info-row">
+                <span class="label">Abholung:</span>
+                <span class="value">17:30 - 18:00</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Anbieter:</span>
+                <span class="value">Mensa Zentrum</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Portionen:</span>
+                <span class="value">3 verfügbar</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Allergene:</span>
+                <span class="value">A, C</span>
+              </div>
+            </div>
+
+            <p class="description">Hausgemachte Pasta mit leckerer Bolognese-Sauce aus frischen Zutaten.</p>
+
+            <button class="btn-primary btn-large">Für 1,99 EUR reservieren</button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 08: Favorit hinzufügen -->
+      <section class="screen" data-screen="08">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Pasta Bolognese</div>
+          <button class="like-btn filled">♥</button>
+        </header>
+        <div class="screen-content">
+          <div class="detail-image">Bildplatzhalter für Gericht</div>
+
+          <div class="detail-section">
+            <h2>Pasta Bolognese</h2>
+            <div class="detail-price">1,99 EUR</div>
+            <p class="success-text">✓ Zu Favoriten hinzugefügt</p>
+
+            <button class="btn-primary btn-large">Für 1,99 EUR reservieren</button>
+            <button class="btn-secondary">Zu Favoriten</button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 09: Reservierung bestätigen -->
+      <section class="screen" data-screen="09">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Reservierung</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="confirmation-card">
+            <h2>Reservierung bestätigen</h2>
+            <p class="info-text">Kostenloses Stornieren bis 17:20 möglich</p>
+
+            <div class="dish-preview">
+              <div class="dish-image">Bildplatzhalter</div>
+              <h3>Pasta Bolognese</h3>
+            </div>
+
+            <div class="reservation-details">
+              <div class="detail-line">
+                <span>Preis:</span>
+                <span class="highlight">1,99 EUR</span>
+              </div>
+              <div class="detail-line">
+                <span>Zahlung:</span>
+                <span>Bei Abholung vor Ort</span>
+              </div>
+              <div class="detail-line">
+                <span>Abholzeit:</span>
+                <span>17:30 - 18:00</span>
+              </div>
+              <div class="detail-line">
+                <span>Mensa:</span>
+                <span>Zentralgebäude</span>
+              </div>
+            </div>
+
+            <button class="btn-primary btn-large">Verbindlich reservieren</button>
+            <button class="btn-secondary">Zurück</button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn active">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 10: Erfolg / QR Code -->
+      <section class="screen" data-screen="10">
+        <header class="topbar success">
+          <div class="spacer"></div>
+          <div class="topbar-title">Erfolgreich!</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="success-icon">✓</div>
+
+          <h2>Reservierung bestätigt</h2>
+          <p class="subtitle">Dein Essen wartet auf dich!</p>
+
+          <div class="reserved-item">
+            <div class="item-image">Bildplatzhalter</div>
+            <h3>Pasta Bolognese</h3>
+            <p class="item-price">1,99 EUR</p>
+          </div>
+
+          <div class="qr-card">
+            <div class="qr-box">QR-Code Platzhalter</div>
+            <p class="qr-code">Code: ABCD-1234</p>
+          </div>
+
+          <div class="time-display">
+            <p class="time-label">Abholung bis:</p>
+            <p class="time-value">18:00</p>
+          </div>
+
+          <button class="btn-primary btn-large">Zu meinen Bestellungen</button>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn active">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 11: Meine Bestellungen -->
+      <section class="screen" data-screen="11">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Meine Bestellungen</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="booking-card active">
+            <div class="booking-image">Bildplatzhalter</div>
+            <div class="booking-info">
+              <h3>Pasta Bolognese</h3>
+              <p class="booking-meta">Status: Reserviert</p>
+              <p class="booking-time">Abholung bis: 18:00</p>
+              <p class="booking-code">Code: ABCD-1234</p>
+            </div>
+            <span class="status-badge">Reserviert</span>
+          </div>
+
+          <div class="booking-card">
+            <div class="booking-image">Bildplatzhalter</div>
+            <div class="booking-info">
+              <h3>Curry mit Reis</h3>
+              <p class="booking-meta">Status: Abgeholt</p>
+              <p class="booking-time">27.07.2026</p>
+            </div>
+            <span class="status-badge completed">Abgeholt</span>
+          </div>
+
+          <div class="booking-card">
+            <div class="booking-image">Bildplatzhalter</div>
+            <div class="booking-info">
+              <h3>Salat Bowl</h3>
+              <p class="booking-meta">Status: Storniert</p>
+              <p class="booking-time">24.07.2026</p>
+            </div>
+            <span class="status-badge cancelled">Storniert</span>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn active">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 12: Reservierungsdetail mit Countdown -->
+      <section class="screen" data-screen="12">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Bestelldetail</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="countdown-display">
+            <h2>Pasta Bolognese</h2>
+            <p class="countdown-label">Abholzeit verbleibt</p>
+            <div class="countdown-timer">00:18:45</div>
+            <p class="countdown-hint">Tage : Stunden : Minuten</p>
+          </div>
+
+          <div class="qr-card">
+            <div class="qr-box">QR-Code Platzhalter</div>
+            <p class="qr-code">Code: ABCD-1234</p>
+            <p class="qr-hint">Zeige diesen Code bei der Abholung</p>
+          </div>
+
+          <button class="btn-danger">Reservierung stornieren</button>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn active">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 13: Storno Bestätigung -->
+      <section class="screen" data-screen="13">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Stornierung</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="dialog">
+            <h2>Wirklich stornieren?</h2>
+            <p class="warning">Diese Aktion kann nicht rückgängig gemacht werden.</p>
+            <p class="info">Kostenloses Stornieren bis 17:20 möglich.</p>
+
+            <div class="item-preview">
+              <div class="item-image-small">Bildplatzhalter</div>
+              <p>Pasta Bolognese</p>
+              <p class="price">1,99 EUR</p>
+            </div>
+
+            <div class="button-pair">
+              <button class="btn-secondary">Abbrechen</button>
+              <button class="btn-danger">Ja, stornieren</button>
+            </div>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn active">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 14: Storno erfolgreich -->
+      <section class="screen" data-screen="14">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Storniert</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="info-icon">!</div>
+          <h2>Stornierung erfolgreich</h2>
+          <p class="subtitle">Die Reservierung wurde gelöscht.</p>
+
+          <div class="info-box">
+            <p>Lass dich von neuen Angeboten überraschen!</p>
+          </div>
+
+          <button class="btn-primary btn-large">Neue Angebote ansehen</button>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn active">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 15: Favoriten leer -->
+      <section class="screen" data-screen="15">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Favoriten</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="empty-state">
+            <div class="empty-icon">♡</div>
+            <h2>Noch keine Favoriten</h2>
+            <p class="subtitle">Speichere Angebote, die dir gefallen!</p>
+          </div>
+
+          <button class="btn-primary btn-large">Angebote entdecken</button>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn active">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 16: Favoriten gefüllt -->
+      <section class="screen" data-screen="16">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Favoriten</div>
+          <span class="count">2</span>
+        </header>
+        <div class="screen-content">
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Pasta Bolognese</h3>
+              <p class="offer-meta">Mensa Zentrum • 1,99 EUR</p>
+            </div>
+            <button class="like-btn filled">♥</button>
+          </div>
+
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Gemüselasagne</h3>
+              <p class="offer-meta">Mensa Nord • 2,10 EUR</p>
+            </div>
+            <button class="like-btn filled">♥</button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn active">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 17: Profil -->
+      <section class="screen" data-screen="17">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Mein Profil</div>
+          <button class="settings-btn">⚙</button>
+        </header>
+        <div class="screen-content">
+          <div class="profile-header">
+            <div class="avatar">MM</div>
+            <div class="profile-info">
+              <h2>Max Mustermann</h2>
+              <p class="email">max@uni.de</p>
+            </div>
+          </div>
+
+          <div class="stats-container">
+            <div class="stat-box">
+              <div class="stat-number">12</div>
+              <p class="stat-label">Mahlzeiten gerettet</p>
+            </div>
+            <div class="stat-box">
+              <div class="stat-number">18,4 kg</div>
+              <p class="stat-label">CO₂ gespart</p>
+            </div>
+          </div>
+
+          <div class="menu-list">
+            <button class="menu-item">
+              <span class="menu-icon">📋</span>
+              <span class="menu-text">Bestellhistorie</span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="menu-item">
+              <span class="menu-icon">💬</span>
+              <span class="menu-text">Bewertungen</span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="menu-item">
+              <span class="menu-icon">🔔</span>
+              <span class="menu-text">Benachrichtigungen</span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="menu-item">
+              <span class="menu-icon">❓</span>
+              <span class="menu-text">Hilfe & Support</span>
+              <span class="arrow">→</span>
+            </button>
+            <button class="menu-item logout">
+              <span class="menu-icon">🚪</span>
+              <span class="menu-text">Abmelden</span>
+              <span class="arrow">→</span>
+            </button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 18: Einstellungen -->
+      <section class="screen" data-screen="18">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Einstellungen</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="settings-section">
+            <h3>App</h3>
+            <label class="setting-row">
+              <span>Sprache</span>
+              <select>
+                <option>Deutsch</option>
+                <option>English</option>
+              </select>
+            </label>
+            <label class="setting-row">
+              <span>Dark Mode</span>
+              <input type="checkbox" />
+            </label>
+          </div>
+
+          <div class="settings-section">
+            <h3>Mensa</h3>
+            <label class="setting-row">
+              <span>Lieblingsmensa</span>
+              <select>
+                <option>Zentrum</option>
+                <option>Nord</option>
+                <option>Süd</option>
+              </select>
+            </label>
+          </div>
+
+          <div class="settings-section">
+            <h3>Benachrichtigungen</h3>
+            <label class="setting-row">
+              <span>Neue Angebote</span>
+              <input type="checkbox" checked />
+            </label>
+            <label class="setting-row">
+              <span>Abhol-Erinnerung</span>
+              <input type="checkbox" checked />
+            </label>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 19: Bestellhistorie -->
+      <section class="screen" data-screen="19">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Bestellhistorie</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="history-group">
+            <div class="history-date">27.07.2026</div>
+            <div class="history-item">
+              <div class="history-image">Bildplatzhalter</div>
+              <div class="history-info">
+                <h3>Pasta Bolognese</h3>
+                <p>Abgeholt • 1,99 EUR</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-group">
+            <div class="history-date">24.07.2026</div>
+            <div class="history-item">
+              <div class="history-image">Bildplatzhalter</div>
+              <div class="history-info">
+                <h3>Curry mit Reis</h3>
+                <p>Abgeholt • 2,20 EUR</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-group">
+            <div class="history-date">21.07.2026</div>
+            <div class="history-item">
+              <div class="history-image">Bildplatzhalter</div>
+              <div class="history-info">
+                <h3>Salat Bowl</h3>
+                <p>Storniert • 1,50 EUR</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="history-group">
+            <div class="history-date">18.07.2026</div>
+            <div class="history-item">
+              <div class="history-image">Bildplatzhalter</div>
+              <div class="history-info">
+                <h3>Gemüselasagne</h3>
+                <p>Abgeholt • 2,10 EUR</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 20: Bewertung Anbieter -->
+      <section class="screen" data-screen="20">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Bewertung</div>
+          <button class="save-btn">Senden</button>
+        </header>
+        <div class="screen-content center">
+          <div class="rating-card">
+            <h2>Mensa Zentrum</h2>
+            <p class="subtitle">Wie war deine Erfahrung?</p>
+
+            <div class="stars">
+              <button class="star">★</button>
+              <button class="star">★</button>
+              <button class="star">★</button>
+              <button class="star">★</button>
+              <button class="star">☆</button>
+            </div>
+
+            <textarea placeholder="Dein Kommentar (optional)"></textarea>
+
+            <button class="btn-primary btn-large">Bewertung absenden</button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 21: Benachrichtigungen -->
+      <section class="screen" data-screen="21">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Benachrichtigungen</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="notification-item">
+            <div class="notif-icon">🍝</div>
+            <div class="notif-content">
+              <h3>Pasta Bolognese verfügbar</h3>
+              <p>Jetzt für nur 1,99 EUR reservieren!</p>
+              <p class="notif-time">vor 5 Minuten</p>
+            </div>
+          </div>
+
+          <div class="notification-item">
+            <div class="notif-icon">⏰</div>
+            <div class="notif-content">
+              <h3>Abholzeit nähert sich</h3>
+              <p>Deine Bestellung ist in 15 Minuten bereit!</p>
+              <p class="notif-time">vor 2 Stunden</p>
+            </div>
+          </div>
+
+          <div class="notification-item">
+            <div class="notif-icon">♡</div>
+            <div class="notif-content">
+              <h3>Dein Favorit ist verfügbar</h3>
+              <p>Curry mit Reis ist wieder da!</p>
+              <p class="notif-time">gestern</p>
+            </div>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 22: Kartenansicht -->
+      <section class="screen" data-screen="22">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Karte</div>
+          <button class="list-btn">≡</button>
+        </header>
+        <div class="screen-content">
+          <div class="map-container">Kartendarstellung Platzhalter</div>
+
+          <div class="map-result">
+            <div class="result-card">
+              <h3>Mensa Zentrum</h3>
+              <p class="distance">2,4 km entfernt</p>
+              <p class="offers-count">3 Angebote verfügbar</p>
+              <button class="btn-small">Angebote ansehen</button>
+            </div>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 23: Nach Abholung - Bestätigung -->
+      <section class="screen" data-screen="23">
+        <header class="topbar success">
+          <div class="spacer"></div>
+          <div class="topbar-title">Abgeholt!</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="success-icon">✓</div>
+          <h2>Guten Appetit!</h2>
+          <p class="subtitle">Deine Bestellung wurde abgeholt.</p>
+
+          <div class="meal-card">
+            <div class="meal-image">Bildplatzhalter</div>
+            <h3>Pasta Bolognese</h3>
+            <p class="meal-price">1,99 EUR</p>
+          </div>
+
+          <p class="impact-message">Du hast Lebensmittel gerettet! 🌍</p>
+          <p class="impact-detail">Dein Beitrag: +0,3 kg CO₂ gespart</p>
+
+          <button class="btn-primary btn-large">Anbieter bewerten</button>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn active">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 24: Keine Ergebnisse -->
+      <section class="screen" data-screen="24">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Keine Ergebnisse</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="error-icon">✕</div>
+          <h2>Keine Angebote gefunden</h2>
+          <p class="subtitle">Versuche einen anderen Campus oder Zeitraum</p>
+
+          <div class="suggestions">
+            <p class="label">Vorschlag:</p>
+            <button class="btn-secondary btn-small">Filter zurücksetzen</button>
+            <button class="btn-secondary btn-small">Andere Zeit</button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 25: Netzwerkfehler -->
+      <section class="screen" data-screen="25">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Fehler</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="error-icon large">⚠</div>
+          <h2>Verbindungsfehler</h2>
+          <p class="error-text">Überprüfe deine Internetverbindung und versuche erneut.</p>
+
+          <button class="btn-primary btn-large">Erneut versuchen</button>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 26: Loading State -->
+      <section class="screen" data-screen="26">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Wird geladen…</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content center">
+          <div class="spinner"></div>
+          <h2>Angebote werden geladen…</h2>
+          <p class="loading-text">Bitte warten</p>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 27: Sortierung Variante -->
+      <section class="screen" data-screen="27">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Sortierung</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="sort-options">
+            <label class="radio-option">
+              <input type="radio" name="sort" checked />
+              <span>Empfohlen</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="sort" />
+              <span>Preis: aufsteigend</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="sort" />
+              <span>Preis: absteigend</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="sort" />
+              <span>Abholzeit: früh zuerst</span>
+            </label>
+            <label class="radio-option">
+              <input type="radio" name="sort" />
+              <span>Entfernung: nah zuerst</span>
+            </label>
+          </div>
+          <button class="btn-primary btn-large">Anwenden</button>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 28: Detail Vegetarisch -->
+      <section class="screen" data-screen="28">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Gemüselasagne</div>
+          <button class="like-btn">♡</button>
+        </header>
+        <div class="screen-content">
+          <div class="detail-image">Bildplatzhalter für Gericht</div>
+
+          <div class="detail-section">
+            <h2>Gemüselasagne</h2>
+            <div class="badges">
+              <span class="badge veg">Vegetarisch</span>
+              <span class="badge popular">Beliebt</span>
+            </div>
+            <div class="detail-price">2,10 EUR</div>
+            <p class="discount-badge">30% Rabatt</p>
+
+            <div class="info-grid">
+              <div class="info-row">
+                <span class="label">Abholung:</span>
+                <span class="value">18:00 - 18:30</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Anbieter:</span>
+                <span class="value">Mensa Süd</span>
+              </div>
+              <div class="info-row">
+                <span class="label">Portionen:</span>
+                <span class="value">1 verfügbar</span>
+              </div>
+            </div>
+
+            <button class="btn-primary btn-large">Für 2,10 EUR reservieren</button>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 29: Filter aktiv mit Ergebnis -->
+      <section class="screen" data-screen="29">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Gefiltert</div>
+          <button class="filter-btn active">🔽</button>
+        </header>
+        <div class="screen-content">
+          <div class="active-filters">
+            <span class="filter-tag">Vegetarisch ✕</span>
+            <span class="filter-tag">Zentrum ✕</span>
+            <span class="filter-tag">bis 3 EUR ✕</span>
+          </div>
+
+          <div class="offer-item">
+            <div class="offer-image">Bildplatzhalter</div>
+            <div class="offer-content">
+              <h3>Gemüselasagne</h3>
+              <p class="offer-meta">18:00 • Vegetarisch</p>
+            </div>
+            <div class="offer-price">2,10 EUR</div>
+          </div>
+
+          <div class="result-count">
+            <p>1 Ergebnis gefunden</p>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn active">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn">👤 Profil</button>
+        </nav>
+      </section>
+
+      <!-- SCREEN 30: Hilfe / Barrierefreiheit -->
+      <section class="screen" data-screen="30">
+        <header class="topbar">
+          <button class="back-btn">←</button>
+          <div class="topbar-title">Hilfe & Support</div>
+          <div class="spacer"></div>
+        </header>
+        <div class="screen-content">
+          <div class="help-section">
+            <h3>Barrierefreiheit</h3>
+            <p class="option">Textgröße: Groß</p>
+            <p class="option">Kontrastreicher Modus: Aktiv</p>
+            <p class="option">Screenreader-Unterstützung: Aktiv</p>
+          </div>
+
+          <div class="help-section">
+            <h3>Support</h3>
+            <p>Hast du ein Problem?</p>
+            <p class="contact">📧 support@foodforall.de</p>
+            <p class="contact">🕐 Mo-Fr 9:00 - 17:00</p>
+          </div>
+
+          <div class="help-section">
+            <h3>Häufige Fragen</h3>
+            <p>• Wie reserviere ich ein Angebot?</p>
+            <p>• Wie kann ich meine Bestellung stornieren?</p>
+            <p>• Welche Zahlungsarten werden akzeptiert?</p>
+          </div>
+        </div>
+        <nav class="bottombar">
+          <button class="nav-btn">🏠 Start</button>
+          <button class="nav-btn">🔍 Suche</button>
+          <button class="nav-btn">📦 Bestellungen</button>
+          <button class="nav-btn">❤️ Favoriten</button>
+          <button class="nav-btn active">👤 Profil</button>
+        </nav>
+      </section>
+    </div>
   </body>
 </html>
