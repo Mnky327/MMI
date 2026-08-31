@@ -26,6 +26,7 @@
   --radius: 12px;
   --radius-lg: 16px;
   --radius-pill: 999px;
+  --bar-height: 68px;
   --transition: all 0.2s ease;
 }
 
@@ -91,7 +92,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: var(--spacing-lg);
+  padding: 0 var(--spacing-lg);
+  min-height: var(--bar-height);
+  height: var(--bar-height);
   background: white;
   border-bottom: 1px solid var(--border);
   flex-shrink: 0;
@@ -181,10 +184,11 @@ body {
    ============================================================================ */
 
 .screen-content {
-  flex: 1;
-  overflow-y: auto;
-  padding: var(--spacing-lg);
-  padding-bottom: 88px;
+  flex: none;
+  height: calc(874px - (var(--bar-height) * 2));
+  overflow: hidden;
+  padding: 14px;
+  padding-bottom: 14px;
 }
 
 .screen-content.center {
@@ -1332,6 +1336,7 @@ p {
   bottom: 0;
   left: 0;
   right: 0;
+  height: var(--bar-height);
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 0;
@@ -1342,7 +1347,7 @@ p {
 }
 
 .nav-btn {
-  padding: var(--spacing-md) var(--spacing-sm);
+  padding: 8px 4px;
   border: none;
   background: transparent;
   cursor: pointer;
@@ -1354,8 +1359,91 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2px;
+  justify-content: center;
+  gap: 3px;
   white-space: nowrap;
+}
+
+/* Keep critical reservation/detail screens within fixed 402x874 without scrolling */
+.screen[data-screen="07"] .detail-image,
+.screen[data-screen="08"] .detail-image,
+.screen[data-screen="28"] .detail-image {
+  height: 180px;
+  margin-bottom: 10px;
+}
+
+.screen[data-screen="07"] .detail-section,
+.screen[data-screen="08"] .detail-section,
+.screen[data-screen="09"] .confirmation-card,
+.screen[data-screen="10"] .qr-card {
+  padding: 12px;
+}
+
+.screen[data-screen="07"] .detail-price,
+.screen[data-screen="08"] .detail-price,
+.screen[data-screen="28"] .detail-price {
+  font-size: 24px;
+  margin: 8px 0;
+}
+
+.screen[data-screen="07"] .discount-badge,
+.screen[data-screen="28"] .discount-badge,
+.screen[data-screen="29"] .discount-badge {
+  margin-bottom: 10px;
+  padding: 4px 8px;
+}
+
+.screen[data-screen="07"] .info-row,
+.screen[data-screen="28"] .info-row,
+.screen[data-screen="29"] .info-row {
+  padding: 8px 0;
+  font-size: 12px;
+}
+
+.screen[data-screen="07"] .description,
+.screen[data-screen="28"] .description,
+.screen[data-screen="29"] .description {
+  font-size: 12px;
+  margin: 10px 0;
+}
+
+.screen[data-screen="09"] .dish-image,
+.screen[data-screen="09"] .item-image,
+.screen[data-screen="09"] .meal-image {
+  height: 86px;
+}
+
+.screen[data-screen="09"] .detail-line {
+  margin: 4px 0;
+  padding: 2px 0;
+  font-size: 12px;
+}
+
+.screen[data-screen="10"] .success-icon,
+.screen[data-screen="23"] .success-icon {
+  font-size: 44px;
+  margin-bottom: 10px;
+}
+
+.screen[data-screen="10"] .reserved-item,
+.screen[data-screen="23"] .meal-card {
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.screen[data-screen="10"] .item-image,
+.screen[data-screen="23"] .meal-image {
+  height: 82px;
+}
+
+.screen[data-screen="10"] .qr-box,
+.screen[data-screen="12"] .qr-box {
+  width: 112px;
+  height: 112px;
+}
+
+.screen[data-screen="10"] .time-value {
+  font-size: 26px;
 }
 
 .nav-btn:active {
