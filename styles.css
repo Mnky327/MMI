@@ -5,28 +5,34 @@
    ============================================================================ */
 
 :root {
-  --primary: #2d7f43;
-  --primary-light: #e8f4e7;
-  --primary-dark: #1b5f32;
-  --secondary: #f5f5f5;
-  --danger: #d32f2f;
-  --danger-light: #fce4e4;
-  --text-dark: #1a1a1a;
-  --text-light: #666666;
-  --border: #e0e0e0;
-  --bg-page: #fafafa;
-  --success: #4caf50;
-  --warning: #ff9800;
+  --primary: #53b175;
+  --primary-light: #e8f6ea;
+  --primary-dark: #2e7d4f;
+  --accent: #f7941d;
+  --accent-light: #fef0dc;
+  --accent-dark: #b9660a;
+  --secondary: #f2f3f2;
+  --danger: #e5484d;
+  --danger-light: #fbe4e4;
+  --text-dark: #181725;
+  --text-light: #7c7c7c;
+  --border: #ececec;
+  --bg-page: #f2f3f2;
+  --success: #22c55e;
+  --warning: #f59e0b;
   --spacing-xs: 4px;
   --spacing-sm: 8px;
   --spacing-md: 12px;
   --spacing-lg: 16px;
   --spacing-xl: 20px;
   --spacing-2xl: 24px;
-  --radius: 12px;
-  --radius-lg: 16px;
+  --radius: 16px;
+  --radius-lg: 20px;
   --radius-pill: 999px;
   --bar-height: 68px;
+  --shadow-sm: 0 2px 8px rgba(24, 23, 37, 0.06);
+  --shadow-md: 0 10px 22px rgba(24, 23, 37, 0.09);
+  --shadow-lg: 0 20px 40px rgba(24, 23, 37, 0.12);
   --transition: all 0.2s ease;
 }
 
@@ -38,8 +44,8 @@
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto',
+    'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: var(--bg-page);
@@ -334,12 +340,15 @@ p {
 }
 
 .btn-primary {
-  background: var(--primary);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
   color: white;
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:active {
   background: var(--primary-dark);
+  box-shadow: none;
+  transform: translateY(1px);
 }
 
 .btn-primary.btn-large {
@@ -427,7 +436,15 @@ p {
 }
 
 .search-icon {
-  font-size: 16px;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  border-radius: 10px;
+  background: var(--primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
   cursor: pointer;
 }
 
@@ -571,7 +588,7 @@ p {
   font-size: 11px;
   color: var(--text-light);
   text-align: center;
-  padding: var(--spacing-sm);
+  padding: 0;
 }
 
 .offer-content {
@@ -602,7 +619,7 @@ p {
 .offer-price {
   font-weight: 700;
   font-size: 14px;
-  color: var(--primary);
+  color: var(--text-dark);
   white-space: nowrap;
 }
 
@@ -1497,6 +1514,7 @@ p {
   gap: 0;
   border-top: 1px solid var(--border);
   background: white;
+  box-shadow: 0 -6px 16px rgba(20, 40, 30, 0.05);
   flex-shrink: 0;
   border-radius: 0 0 28px 28px;
 }
@@ -1771,8 +1789,19 @@ p {
 }
 
 .nav-btn.active {
+  position: relative;
   color: var(--primary);
-  background: var(--primary-light);
+  font-weight: 700;
+}
+
+.nav-btn.active::before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--primary);
 }
 
 /* ============================================================================
@@ -1837,3 +1866,218 @@ p {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ============================================================================
+   VISUAL REFRESH — DEPTH, WARMTH & POLISH
+   (color, shadow and decorative refinements only — no layout/size changes)
+   ============================================================================ */
+
+.screen {
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(20, 40, 30, 0.06);
+}
+
+/* Soft elevation for every card-like surface, reused across all 30 screens */
+.offer-item,
+.campus-card,
+.campus-entry-card,
+.detail-section,
+.confirmation-card,
+.dialog,
+.rating-card,
+.info-box,
+.qr-card,
+.booking-card,
+.history-item,
+.notification-item,
+.stat-box,
+.countdown-display,
+.result-card,
+.dish-preview,
+.reserved-item,
+.meal-card,
+.item-preview,
+.help-section {
+  box-shadow: var(--shadow-sm);
+  border-color: rgba(20, 40, 30, 0.05);
+}
+
+.menu-list {
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.profile-header {
+  background: linear-gradient(135deg, var(--primary-light) 0%, #ffffff 100%);
+  box-shadow: var(--shadow-sm);
+}
+
+.stat-box {
+  background: linear-gradient(135deg, var(--primary-light) 0%, #ffffff 100%);
+}
+
+.avatar {
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-secondary {
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-danger {
+  box-shadow: var(--shadow-sm);
+}
+
+.tag {
+  box-shadow: var(--shadow-sm);
+}
+
+.tag-selected {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: white;
+  box-shadow: var(--shadow-sm);
+}
+
+.filter-btn {
+  box-shadow: var(--shadow-sm);
+}
+
+.search-box {
+  box-shadow: var(--shadow-sm);
+}
+
+.search-box.active {
+  box-shadow: 0 0 0 3px var(--primary-light), var(--shadow-sm);
+}
+
+/* Red sale tag for discounts, warm accent reserved for "popular" callouts */
+.discount-badge {
+  background: var(--danger-light);
+  color: var(--danger);
+}
+
+.badge.popular {
+  background: var(--accent-light);
+  border-color: #ffd9a3;
+  color: var(--accent-dark);
+}
+
+.campus-kicker::before {
+  content: "📍 ";
+}
+
+/* Decorative, non-intrusive icon watermarks on image placeholders (absolute, no reflow) */
+.offer-image,
+.detail-image,
+.dish-image,
+.item-image,
+.item-image-small,
+.meal-image,
+.booking-image,
+.history-image,
+.campus-map-placeholder,
+.qr-box {
+  position: relative;
+  overflow: hidden;
+  border-style: solid;
+  background: var(--secondary);
+}
+
+.offer-image img,
+.detail-image img,
+.dish-image img,
+.item-image img,
+.item-image-small img,
+.meal-image img,
+.booking-image img,
+.history-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: inherit;
+}
+
+.offer-image::before,
+.detail-image::before,
+.dish-image::before,
+.item-image::before,
+.item-image-small::before,
+.meal-image::before,
+.booking-image::before,
+.history-image::before {
+  content: "🍽";
+  position: absolute;
+  right: 6px;
+  bottom: 4px;
+  font-size: 20px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.campus-map-placeholder::before {
+  content: "🗺";
+  position: absolute;
+  right: 6px;
+  bottom: 4px;
+  font-size: 20px;
+  opacity: 0.18;
+  pointer-events: none;
+}
+
+.qr-box {
+  background: repeating-linear-gradient(45deg, #eef2ee 0, #eef2ee 6px, #e3e9e3 6px, #e3e9e3 12px);
+}
+
+/* Status/feedback icons presented as soft circular badges instead of bare emoji */
+.success-icon,
+.error-icon,
+.info-icon,
+.empty-icon {
+  width: 84px;
+  height: 84px;
+  margin: 0 auto var(--spacing-lg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  line-height: 1;
+}
+
+.success-icon {
+  background: linear-gradient(135deg, #d6f5df 0%, #b8ecc8 100%);
+  color: #12793f;
+}
+
+.error-icon {
+  background: linear-gradient(135deg, #fde2e2 0%, #fbc7c7 100%);
+  color: var(--danger);
+}
+
+.error-icon.large {
+  width: 96px;
+  height: 96px;
+  font-size: 42px;
+}
+
+.info-icon {
+  background: linear-gradient(135deg, #fef3d7 0%, #fde3a7 100%);
+  color: #b45309;
+}
+
+.empty-icon {
+  background: var(--secondary);
+  color: var(--text-light);
+}
+
+.screen[data-screen="10"] .success-icon,
+.screen[data-screen="23"] .success-icon {
+  width: 64px;
+  height: 64px;
+  font-size: 28px;
+  margin: 0 auto 10px;
+}
+
