@@ -138,6 +138,7 @@ body {
   background: transparent;
   border: none;
   font-size: 18px;
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   cursor: pointer;
   padding: var(--spacing-sm);
   display: flex;
@@ -1346,6 +1347,7 @@ p {
   background: transparent;
   cursor: pointer;
   font-size: 12px;
+  font-family: 'Segoe UI Emoji', 'Apple Color Emoji', 'Noto Color Emoji', sans-serif;
   font-weight: 600;
   color: var(--text-light);
   transition: var(--transition);
