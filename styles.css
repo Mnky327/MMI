@@ -44,6 +44,7 @@ body {
   background: var(--bg-page);
   color: var(--text-dark);
   overflow-x: hidden;
+  padding: 20px;
 }
 
 /* ============================================================================
@@ -51,24 +52,27 @@ body {
    ============================================================================ */
 
 .viewport-container {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-  max-width: 480px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 402px);
+  gap: 24px;
+  justify-content: center;
+  align-items: start;
+  max-width: 1800px;
   margin: 0 auto;
-  background: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  overflow-y: hidden;
 }
 
 .screen {
-  display: none;
-  flex: 1;
+  display: flex;
   flex-direction: column;
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
+  width: 402px;
+  height: 874px;
+  position: relative;
+  overflow: hidden;
   scroll-behavior: smooth;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
 }
 
 .screen.active {
@@ -179,7 +183,7 @@ body {
   flex: 1;
   overflow-y: auto;
   padding: var(--spacing-lg);
-  padding-bottom: 80px;
+  padding-bottom: 88px;
 }
 
 .screen-content.center {
@@ -1333,6 +1337,7 @@ p {
   border-top: 1px solid var(--border);
   background: white;
   flex-shrink: 0;
+  border-radius: 0 0 28px 28px;
 }
 
 .nav-btn {
@@ -1399,15 +1404,19 @@ p {
    ============================================================================ */
 
 @media (max-width: 480px) {
-  .viewport-container {
-    max-width: 100%;
-    box-shadow: none;
-    border-radius: 0;
-  }
-
   body {
     margin: 0;
-    padding: 0;
+    padding: 8px;
+  }
+
+  .viewport-container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 12px;
+  }
+
+  .screen {
+    width: min(402px, calc(100vw - 16px));
   }
 }
 
